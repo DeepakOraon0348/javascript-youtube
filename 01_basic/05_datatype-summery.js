@@ -33,4 +33,27 @@ const myFunction=function(){
 }
 
 //funtion for check the data type is
-console.log(typeof heros);
+//console.log(typeof heros);
+
+/***************memory manegement*********** */
+
+//Stack(Primitive){jo vi memory define hogauska ek copy milega},
+//Heap(Non-Primitive){jo vi value denge uska original value change hoga}
+// let myName="Deepak"
+// let otherName=myName
+// otherName="Rahul"
+
+// console.log(myName)
+// console.log(otherName);
+
+let userOne={
+    email:"user@google.com",
+    upi:"user@ybl"
+}
+
+let userTwo=userOne
+
+userTwo.email="Deepak@gmail.com"
+
+console.log(userOne.email)
+console.log(userTwo.email)
