@@ -24,5 +24,38 @@ let score="33abc";
 
  let someNumber=33;
  let stringNumber=String(someNumber);
- console.log(stringNumber);
- console.log(typeof stringNumber);
+//  console.log(stringNumber);
+//  console.log(typeof stringNumber);
+
+/**********************Operation*****************/
+let value=3
+let Negvalue=-value
+// console.log(Negvalue)
+
+// console.log(2+2)
+// console.log(2-2)
+// console.log(2*2)
+// console.log(2**3)
+// console.log(2%3)
+
+// let str1="hello"
+// let str2=" Deepak"
+// let str3=str1+str2
+// console.log(str3)
+
+// console.log("1"+2)
+// console.log(1+"2")//both are give same result
+// console.log("1"+2+2)
+
+// console.log(1+2+"2")
+
+// console.log(+true)
+// console.log(+"")//output is 0
+
+let num1,num2,num3;
+num1=num2=num3=2+2//this is not a right way
+
+let gameCounter=100
+gameCounter++;
+console.log(gameCounter)
+
