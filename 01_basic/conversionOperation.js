@@ -35,7 +35,7 @@ let Negvalue=-value
 // console.log(2+2)
 // console.log(2-2)
 // console.log(2*2)
-// console.log(2**3)
+// console.log(2**3)//power me ata hii 3(2^3)
 // console.log(2%3)
 
 // let str1="hello"
@@ -45,9 +45,9 @@ let Negvalue=-value
 
 // console.log("1"+2)
 // console.log(1+"2")//both are give same result
-// console.log("1"+2+2)
+// console.log("1"+2+2)//out put->122
 
-// console.log(1+2+"2")
+// console.log(1+2+"2")//o/p->32
 
 // console.log(+true)
 // console.log(+"")//output is 0
