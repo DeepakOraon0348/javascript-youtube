@@ -5,7 +5,7 @@
 console.log(3+3);//code readability should be high
 
 console.log("Deepak");
-
+//ECMA SCRIPT OR TC-39 OR MdM DOCUMENT ->READING 
 
 //data type
 let name="hitesh"//duble inverted comman denoted string
