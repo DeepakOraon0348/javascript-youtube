@@ -1,6 +1,7 @@
 //Primitive
 
 //7 atypes:string ,Number,Boolean,Null,Undefined,Symbol,BigInt
+//Symbal->kisi vi element ko unique banane ke liye hota hii.
 const score=100
 const scoreValue=100.3
 
@@ -19,6 +20,8 @@ const bigNumber=34564546547981n
 
 //Array,Objects,Functions
 //1.Array
+//note ->JavaScript me mester karna hii to object or Browser event or web event koro in detail.
+
 const heros=["shaktiman","naagraj","doga"];
 
 //object
