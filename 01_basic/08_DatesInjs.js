@@ -16,8 +16,28 @@ let myDate = new Date()
 // let myCreatedDate1 = new Date(2023,0,23,5,3)//ye time vi deta hii.
 // console.log(myCreatedDate.toLocaleString());
 
-let myCreatedDate1 = new Date("2023,01,23")
-console.log();
+let myCreatedDate1 = new Date("2023,01,23")//ye dd//mm//yyyy ke formate me leta hii.
+//console.log(myCreatedDate1.toLocaleString());
+
+let myTimeStamp = Date.now()//ye milli second me deta hii 1 jan 1970 se
+//console.log(myTimeStamp);//1725870223596
+//console.log(myCreatedDate1.getTime());//1674432000000
+
+//console.log(Math.floor(Date.now()/1000)); //ye mathod second me deta hii.
+let newDate = new Date()
+console.log(newDate);
+console.log(newDate.getMonth() +1);//month lene ke liye.
+console.log(newDate.getDay());//day calculate karne ke liye.
+
+
+newDate.toLocaleString('default',{
+    weekday:"long"
+})
+
+
+
+
+
 
 
 
