@@ -32,22 +32,25 @@ const JsUser={
 //console.log(JsUser);
 
 
-JsUser.email="hitesh@chatgpt.com"
+JsUser.email="hitesh@chatgpt.com"//alwas . ka hi use karna chahiye.
 //Object.freeze(JsUser)//object ko freeze(lock) karne ke liye.object.freeze ka paryog karte hii.
 JsUser.email="hitesh@chatgptDeepak.com"
 JsUser.name="hitesh kumar"
 JsUser["full name"]="Rahul kumar"
 //console.log(JsUser);
+//note steing interplution->backtrik(``)
 
 JsUser.greeting=function(){
     console.log("Hello js user");
+
 }
 
 JsUser.greetingTwo=function(){
-    console.log(`Hello js user $(this.name)`);
+    console.log(`Hello js user,${this.name}`);
 }
-console.log(JsUser.greeting);
-console.log(JsUser.greetingTwo);
+//this se object ko refere karte hii.
+console.log(JsUser.greeting());
+console.log(JsUser.greetingTwo());
 
 
 
