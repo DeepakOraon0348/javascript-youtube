@@ -47,13 +47,42 @@ const user=[
 ]//yeshe data base se data aata hii.
 
 //user[1].email
-console.log(tinderUser);
+//console.log(tinderUser);
 
-console.log(Object.keys(tinderUser));//ye us object ka sare keys ko array me print kar deta hii.
+//console.log(Object.keys(tinderUser));//ye us object ka sare keys ko array me print kar deta hii.
 //ye bahut important hii har jagha use hoga.
-console.log(Object.values(tinderUser));//ye sare value ko array ke rup me print karta hii.
-console.log(Object.entries(tinderUser));//ye each keys and value ko array me print karta hii. 
+// console.log(Object.values(tinderUser));//ye sare value ko array ke rup me print karta hii.
+// console.log(Object.entries(tinderUser));//ye each keys and value ko array me print karta hii. 
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn'));//ye check karta hii ye properties hii ya nahi.
+// console.log(tinderUser.hasOwnProperty('isLoggedIn'));//ye check karta hii ye properties hii ya nahi.
 
+//+++++++++++++++++++++++++++++++++
+
+const course={
+    coursename:"js in hindi",
+    price:"999",
+    courseInstructor: "Deepak"
+}
+//yeha pe object ko de-structure kar rahe hii.
+//course.courseInstructor
+
+const{courseInstructor}=course//course.courseInstructor yeshi ko esh parkar likh sakte hii.
+//kyuki ushe access karne ke liye baar baar likhna padta hii same cheez(course.courseInstructor)
+
+const{courseInstructor:instructor}=course//yeha uska name vi change kar sakte hii.
+
+// console.log(courseInstructor);
+// console.log(instructor);//resut me koi change nahi aaye ga.
+
+//++++++++++++++++ API +++++++++
+//API means->apne kam kisi dusro ke uper dalna .
+
+//jeson ke rup me hi data milta hii.
+// {
+//     "name" : "hitesh",
+//     "coursename" : "js in hindi",
+//     "price": "free"
+// }
+
+//note jeson formater->tool hii API ko samajh ne liye use krte hii.
 
