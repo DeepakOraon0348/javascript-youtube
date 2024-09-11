@@ -34,14 +34,21 @@ function addTwoNumber(number1,number2){
 const result = addTwoNumber(3,5)
 //console.log("Result: ",result);//result->undefined hi becouse function koi return nahi kar raha hii.
 
-function loginUserMessage(username){
-    return `${username} just logged in`
+function loginUserMessage(username="sam"){//ye empty value me under nahijayega.
+    //return `${username} just logged in`
+    //if(!username)//dono ka same kam hii.
+    if(username===undefined){
+        console.log("please enter a username");
+        return
+        
+    }
 }
 
 // loginUserMessage("hitesh")//no result becouse return value ko kahi store nahi kar rahe hii.
 // console.log(loginUserMessage("hitesh"));
 console.log(loginUserMessage());//o/p->undefind,undefined just logged in
 
+//+++++++ use of if statement++
 
 
 
