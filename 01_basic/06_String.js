@@ -15,6 +15,8 @@ const gameName = new String("Deepak Oraon engineer")
 // console.log(gameName.toUpperCase());//convert in to Upper case
 
 //console.log(gameName.charAt(2));//us index me kon sa value hii check karne ke liye.
+//CharAt() or at() dono method ek hii jaisa hii but CharAt() 0-string.lenth-1 tak value ko return karta hii or out of range wale ko empty.
+//at()->ye nagative value ka vi return deta hii.
 
 //console.log(gameName.indexOf('p'));//ye letter kis position pe hii check karne ke liye.
 //const newString = gameName.substring(0,4)//esh method ko slice mathod bolte hii.
