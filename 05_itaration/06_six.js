@@ -27,6 +27,6 @@ const myNums=[1,2,3,4,5,6,7,8,9,10]
 //const userBooks = books.filter((bk) => bk.genre === 'History')
 //userBook = books.filter((bk)=> { 
     //return bk.publish>=1995 && bk.genre==="history"
-})
+//})
 //console.log(userBooks);
 
