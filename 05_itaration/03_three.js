@@ -13,7 +13,7 @@ for (const num of arr) {
 }
 const greetings = "Hllo World"
 for(const greet of greetings){
-   // console.log(`Each char is ${greet}`);
+   // console.log(`Each char is ${greet}`);//ye array jaisa ouptput deta hii.
     
 }
 
