@@ -14,5 +14,12 @@
     div.className="main"
     //div.id="myId"
     div.id=Math.round(Math.random()*10+1)
+    div.setAttribute("title","generated title")
+    div.style.backgroundColor="green"
+    div.style.padding="12px"
+    //div.innerText="chai aur code"//ye over write karta hii .
+    const addText=document.createTextNode("chai aur code")
+    div.appendChild(addText)//ye vi ek nya tarika hii innerText add karne ka.
+    document.body.appendChild(div)
 </script>
 </html>
