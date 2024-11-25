@@ -34,7 +34,13 @@
     newli.textContent = "Mojo"
     secondLang.replaceWith(newli)//ye replace kar diya..
     
+    //edit
+    const firstLang = document.querySelector("li:first-child")
+    firstLang.outerHTML ='<li>TypeScript</li>'//ye first element ko replace kar deta hii.
 
-
+    //remove
+    const lastLang = document.querySelector('li:last-child')
+    lastLang.remove()//ye remove kar deta hi jo vi selected element hii.
+    
 </script>
 </html>
