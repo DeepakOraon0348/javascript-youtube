@@ -13,10 +13,18 @@
 <script>
     function addLanguage(langName) {
         const li =document.createElement('li');
-        li.innerHTML = `${langName}`
+        li.innerHTML = `${langName}`// ye kahi kahi pe optimization issue aata hii.
         document.querySelector('.language').appendChild(li)
     }
     addLanguage("python")
     addLanguage("typescript")
+
+    //optimize language
+    function addOptiLanguage(langName){
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li);
+    }
+    addOptiLanguage('golang')
 </script>
 </html>
