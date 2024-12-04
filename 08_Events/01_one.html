@@ -45,15 +45,15 @@
     // },false)
     // document.getElementById('owl').addEventListener('click',function(e){
     //     console.log("owl clicked");
-    // },false)//yeshe event propagation kahte hii like bubble. ye button se top ke or jata hii.
+    // },false)//yeshe event propagation kahte hii like bubble(bubbling kahte hii). ye button se top ke or jata hii.
      
     document.getElementById('images').addEventListener('click',function(e){
         console.log("clicked inside the ul");
         
     },true)
-    document.getElementById('images').addEventListener('click',function(e){
-        console.log("clicked inside the ul");
-        
-    },true)
+    document.getElementById('owl').addEventListener('click',function(e){
+        console.log("clicked owl");
+        e.stopImmediatePropagation()
+    },true)//esh technique ko capturing kahte hii top-button jata hii.
 </script>
 </html>
