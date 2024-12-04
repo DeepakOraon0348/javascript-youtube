@@ -47,13 +47,35 @@
     //     console.log("owl clicked");
     // },false)//yeshe event propagation kahte hii like bubble(bubbling kahte hii). ye button se top ke or jata hii.
      
-    document.getElementById('images').addEventListener('click',function(e){
-        console.log("clicked inside the ul");
+    // document.getElementById('images').addEventListener('click',function(e){
+    //     console.log("clicked inside the ul");
         
-    },true)
-    document.getElementById('owl').addEventListener('click',function(e){
-        console.log("clicked owl");
-        e.stopImmediatePropagation()
-    },true)//esh technique ko capturing kahte hii top-button jata hii.
+    // },true)
+    // document.getElementById('owl').addEventListener('click',function(e){
+    //     console.log("clicked owl");
+    //     e.stopPropagation()
+    // // },true)//esh technique ko capturing kahte hii top-button jata hii.
+    // document.getElementById('images').addEventListener('click',function(e){
+    //     console.log("clicked inside the ul");
+        
+    // },false)
+    // document.getElementById('owl').addEventListener('click',function(e){
+    //     console.log("clicked owl");
+    //     e.stopPropagation()//ye sirf false me hii hota hii.
+    // },false)//esh technique ko capturing kahte hii top-button jata hii.
+
+
+    // document.getElementById('google').addEventListener('click',function(e){
+    //     e.preventDefault()//ye bubbling ko rokta hii.
+    //     e.stopPropagation()
+    //     console.log("google clicked");   
+    // },false)
+
+    //+++++++++++++++++++++Project 
+    document.querySelector('#images').addEventListener('click',function(e){
+        console.log(e.target.parentNode);
+        
+    })
+
 </script>
 </html>
