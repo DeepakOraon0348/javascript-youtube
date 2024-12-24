@@ -17,13 +17,39 @@
     // }, 1000);
 
 
-    const sayDate = function(str){
-        console.log(str,Date.now());
+    // const sayDate = function(str){
+    //     console.log(str,Date.now());
         
-    }
+    // }
 
-    const intervalId = setInterval(sayDate,1000,"hii");
+    // const intervalId = setInterval(sayDate,1000,"hii");
 
-    clearInterval(intervalId)//ye us interval ko rokne ke liye.
+    // clearInterval(intervalId)//ye us interval ko rokne ke liye.
+
+    //+++++++++++++++ Project- 1 color changer++++++++++++++
+
+    //generate random color
+    const randomColor = function(){
+        const hax = '0123456789ABCDEF';
+        let color = '#';
+
+        for(let i=0;i<6;i++){
+            color += hex[Math.floor(Math.random()* 16)];
+        }
+        return color;
+    };
+
+    const startChangingColor = function(){
+        setInterval(changeBgColor,1000);
+
+        function changeBgColor(){
+            document.body.style.backgroundColor=randomColor();
+        }
+    };
+    const stopChangingColor = function(){};
+
+    document.querySelector('#start').addEventListener('clidk',startChangingColor);
+
+    document.querySelector('#stop').addEventListener('click',stopChangingColor);
 </script>
 </html>
