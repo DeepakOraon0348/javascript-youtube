@@ -9,4 +9,29 @@
     <h1>Chai aur code</h1>
     <button id="stop">stop</button>
 </body>
+<script>
+    // setTimeout(function(){
+    //     console.log("Deepak");
+        
+    // }, 2000)//ye ek function hii jo ek api se call me hota hii.ye ek handlar hii yani return type function hii.
+
+    const sayHitesh = function(){
+        console.log("Deepak");
+        
+    }
+    const changeText = function(){
+        document.querySelector('h1').innerHTML="best JS series"
+    }
+    // setTimeout(changeText, 2000);
+    // setTimeout(sayHitesh,2000)//yeha pe reference diya ja raha hii.
+
+
+    const changeMe = setTimeout(changeText,2000);
+
+    document.querySelector('#stop').addEventListener('click',function(){
+        clearTimeout(changeMe)//ye ush event ko rukne ke liye kiya jata hii.
+        console.log("STOPPED");
+        
+    })
+</script>
 </html>
