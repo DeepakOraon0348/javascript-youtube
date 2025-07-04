@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        height: 100vh;
+        width: 100%;
+        margin: 50%;
+    }
+
+    .card {
+        width: 600px;
+        height: 600px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        font-family: Arial, sans-serif;
+        position: absolute;
+    }
+
+    .card img {
+        width: 200px;
+        height: 200px;
+        background-size: cover;
+        border-radius: 50%;
+        margin-top: 10px;
+        margin-left: 10px;
+        position: relative;
+        top: 0%;
+        left: 30%;
+    }
+
+    .card-content {
+        padding: 16px;
+    }
+
+    .card-title {
+        font-size: 1.5em;
+        margin: 0 0 8px;
+    }
+
+    .card-text {
+        font-size: 1em;
+        color: #555;
+        margin: 0 0 16px;
+    }
+
+    .card-button {
+        display: inline-block;
+        padding: 10px 16px;
+        background-color: #007BFF;
+        color: white;
+        text-decoration: none;
+        border-radius: 4px;
+        text-align: center;
+    }
+
+    .card-button:hover {
+        background-color: #0056b3;
+    }
+</style>
+
+<body>
+    <!-- 0	UNSENT	Client has been created. open() not called yet.
+1	OPENED	open() has been called.
+2	HEADERS_RECEIVED	send() has been called, and headers and status are available.
+3	LOADING	Downloading; responseText holds partial data.
+4	DONE	The operation is complete. -->
+
+    <div class="card">
+        <img id="profile-img" , src="https://via.placeholder.com/300x200" alt="Card Image">
+        <div class="card-content">
+            <h2 class="card-title" ,id="profile-name">Card Title</h2>
+            <p class="card-text">This is a simple card example. You can use it to display content in a structured way.
+            </p>
+            <a href="#" class="card-button">Learn More</a>
+        </div>
+    </div>
+
+    <!-- javaScrip code becouse it here donot load js can not find DOM -->
+     <script>
+    window.addEventListener('DOMContentLoaded', function () {
+        const requestUrl = 'https://api.github.com/users/DeepakOraon0348';
+
+        const xhr = new XMLHttpRequest();
+        xhr.open('GET', requestUrl);
+        xhr.onreadystatechange = function () {
+            console.log(xhr.readyState);
+            if (xhr.readyState === 4) {
+                const data = JSON.parse(this.responseText)
+                console.log(data);
+                document.getElementById('profile-img').src = data.avatar_url;
+                document.querySelector('.card-title').innerText = data.name || data.login;
+                document.querySelector('.card-text').innerText = data.bio || 'No bio available.';
+                document.querySelector('.card-button').href=data.url;
+            }
+        }
+        xhr.send();
+    });
+</script>
+</body>
+
+</html>
