@@ -8,7 +8,8 @@
 </head>
 
 <body style="background-color: #313131">
-
+    <button id="orange" onclick="clickHandler('orange')">Orange</button>
+    <button id="green" onclick="clickHandler('green')">Green</button>
 </body>
 <script>
     // function init() {
@@ -48,6 +49,26 @@
     const myFunc = makeFunc();
     myFunc();
     
+
+</script>
+<script>
+    // document.getElementById("orange").onclick=function(){
+    //     document.body.style.backgroundColor = `orange`
+    // }
+    // document.getElementById("green").onclick = function(){
+    //     document.body.style.backgroundColor = `green`
+    // }
+
+    //eshi parkar 500 button hii to kya kare.
+    function clickHandler(color){
+        //document.body.style.backgroundColor = `${color}`
+
+        return function(){
+            document.body.style.backgroundColor = `${color}`
+        }
+    }
+    document.getElementById('orange').onclick=clickHandler("orange")
+    document.getElementById('green').onclick=clickHandler("green")
 
 </script>
 
